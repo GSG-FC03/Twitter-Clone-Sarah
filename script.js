@@ -43,3 +43,16 @@ retweetIcon.setAttribute('id', 'retweet-icon');
 likeIcon.setAttribute('id', 'like-icon');
 
 })
+
+//add event listen to like icon so it turns to red when  clicking on it
+const likeIcon = document.querySelector('#like-icon');
+likeIcon.addEventListener('click', () => {
+   likeIcon.style.color ='red';
+})
+
+
+// add event listen to retweet icon so it turns to green when clicking on it
+const retweetIcon = document.querySelector('#retweet-icon');
+retweetIcon.addEventListener('click', ()=>{
+         retweetIcon.style.color = '#58f538';
+})
